@@ -1,35 +1,35 @@
-Phonon Á÷³Ì£º
-Ò». ½á¹¹
+Phonon æµç¨‹ï¼š
+ä¸€. ç»“æ„
 1. cell parameter
 2. atomic position
 3. pseudo potential
-4. burai ±à³öscf.in ºÍ example.in
-¶ş. scftest
-1.¸´ÖÆscftestÎÄ¼ş¼Ğ
-2.¸ü¸Äscf.in ²ÎÊı
-  Ö÷Òª°üÀ¨£º
- £¨1£© cell parameter
+4. burai ç¼–å‡ºscf.in å’Œ example.in
+äºŒ. scftest
+1.å¤åˆ¶scftestæ–‡ä»¶å¤¹
+2.æ›´æ”¹scf.in å‚æ•°
+  ä¸»è¦åŒ…æ‹¬ï¼š
+ ï¼ˆ1ï¼‰ cell parameter
   (2)  atomic position
-  (3)  pseudo potential(×¢ÒâØÍÊÆ´øÀ´µÄ±¶Êı¹ØÏµ£¬ÔÚcreatinput.pyÖĞ23ĞĞ¸ü¸Ä£©
-  (4)  nat ºÍ ntyp
-3.¸ü¸Äkpoint
-4.ÔËĞĞcreatinput.py
-5.Ìá½»Á½¸öjobÎÄ¼ş
-6.ÔËĞĞplot.py(ÈçÓĞ±¨´í£¬¼ì²éÊÇ·ñÊÕÁ²£©
-Èı. vcrelax
-1.¸´ÖÆvcrelaxÎÄ¼ş¼Ğ
-2.¸ü¸Äexample.in ²ÎÊı
-  Ö÷Òª°üÀ¨£º
-  £¨1£© cell parameter
+  (3)  pseudo potential(æ³¨æ„èµåŠ¿å¸¦æ¥çš„å€æ•°å…³ç³»ï¼Œåœ¨creatinput.pyä¸­23è¡Œæ›´æ”¹ï¼‰
+  (4)  nat å’Œ ntyp
+3.æ›´æ”¹kpoint
+4.è¿è¡Œcreatinput.py
+5.æäº¤ä¸¤ä¸ªjobæ–‡ä»¶
+6.è¿è¡Œplot.py(å¦‚æœ‰æŠ¥é”™ï¼Œæ£€æŸ¥æ˜¯å¦æ”¶æ•›ï¼‰
+ä¸‰. vcrelax
+1.å¤åˆ¶vcrelaxæ–‡ä»¶å¤¹
+2.æ›´æ”¹example.in å‚æ•°
+  ä¸»è¦åŒ…æ‹¬ï¼š
+  ï¼ˆ1ï¼‰ cell parameter
    (2) atomic position
    (3) pseudo potential
-   (4) ºÏÊÊµÄecut£¨×¢Òâ±¶Êı£©ºÍºÏÊÊkpoint
-3.¸ü¸Ävclocation
-  Ö÷Òª°üÀ¨£º
-  (1) Ñ¹Ç¿·¶Î§
-  (2) scfnp¸ñµã
-4.±àĞ´ºÏÊÊµÄph.in(nq¸ñµãÔÚphonon.py45ĞĞ¸ü¸Ä£©
-5.ÔËĞĞvcinput.py
-6.Ìá½»jobLDA.sh(×¢Òâ²¢ĞĞÈÎÎñ¸öÊıºÍºËÊıµÄ¹ØÏµ£©
-7.ÔËĞĞphonon.py
-8.Ìá½»jobscf.sh
+   (4) åˆé€‚çš„ecutï¼ˆæ³¨æ„å€æ•°ï¼‰å’Œåˆé€‚kpoint
+3.æ›´æ”¹vclocation
+  ä¸»è¦åŒ…æ‹¬ï¼š
+  (1) å‹å¼ºèŒƒå›´
+  (2) scfnpæ ¼ç‚¹
+4.ç¼–å†™åˆé€‚çš„ph.in(nqæ ¼ç‚¹åœ¨phonon.py45è¡Œæ›´æ”¹ï¼‰,æ³¨æ„amass
+5.è¿è¡Œvcinput.py
+6.æäº¤jobLDA.sh(æ³¨æ„å¹¶è¡Œä»»åŠ¡ä¸ªæ•°å’Œæ ¸æ•°çš„å…³ç³»ï¼‰
+7.è¿è¡Œphonon.py
+8.æäº¤jobscf.sh
