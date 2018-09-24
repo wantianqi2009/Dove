@@ -1,0 +1,63 @@
+&CONTROL
+    calculation = "vc-relax"
+    max_seconds =  8.64000e+04
+    pseudo_dir  = "/home1/05751/tg850503/pp/KSPP"
+    forc_conv_thr =  1.00000e-05
+    etot_conv_thr =  1.00000e-06
+    restart_mode = 'from_scratch',
+    tstress = .true.
+    tprnfor = .true.
+    nstep = 300
+    outdir = './tmp'
+    dt = 15
+/
+
+&SYSTEM
+    degauss     =  1.00000e-02
+    ecutrho     =  40.00000e+01
+    ecutwfc     =  10.00000e+01
+    ibrav       = 0
+    nat         = 8
+    ntyp        = 3
+    occupations = "fixed"
+    smearing    = "gaussian"
+/
+
+&ELECTRONS
+    diagonalization='david'
+    mixing_mode = 'plain'
+    mixing_beta = 0.3
+    conv_thr = 1.0d-8
+/
+&ions
+ion_dynamics='damp'
+/
+&cell
+cell_dynamics = 'damp-w'
+press = 1900
+wmass = 0.00010
+/
+
+K_POINTS {automatic}
+ 4  4  4  0 0 0
+
+CELL_PARAMETERS {bohr}
+ 8.9893798    0.0000000    0.0000000
+ 0.0000000    7.9443668    0.0000000
+ 0.0000000    0.0000000    5.4386031
+
+ATOMIC_SPECIES
+ Al   1.0   Al.GGA-PBE-Epaw.UPF
+  H   1.0   H.GGA-PBE-Epaw.UPF
+  O   1.0   O.GGA-PBE-Epaw.UPF
+
+ATOMIC_POSITIONS {crystal}
+Al      0.000000   0.000000   0.000000
+Al      0.500000   0.500000   0.500000
+O       0.348200   0.238700   0.000000
+O       0.651800   0.761300   0.000000
+O       0.151800   0.738700   0.500000
+O       0.848200   0.261300   0.500000
+H       0.000000   0.500000   0.500000
+H       0.500000   0.000000   0.000000
+
