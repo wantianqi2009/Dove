@@ -1,0 +1,55 @@
+&control
+nstep =500
+calculation = 'scf',
+restart_mode = 'from_scratch',
+tstress = .true.
+tprnfor = .true.
+prefix = 'AlOOH'
+pseudo_dir = '/home1/05751/tg850503/pp/KSPP'
+outdir = './tmp'
+dt = 10
+nstep = 500
+etot_conv_thr = 1.0d-6
+forc_conv_thr = 1.0d-5
+/
+&system
+ibrav = 0
+celldm(1) =   0.98237
+nat = 8
+ntyp = 3
+ecutwfc = 160.0
+occupations='fixed', smearing='gaussian', degauss= 0.00100,
+/
+&electrons
+diagonalization='david'
+mixing_mode = 'plain'
+mixing_beta = 0.3
+conv_thr = 1.0d-8
+/
+&ions
+ion_dynamics='damp'
+/
+&cell
+cell_dynamics = 'damp-w'
+press = 100
+wmass = 0.00100
+/
+CELL_PARAMETERS
+   8.993098779   0.000006916  -0.000000000
+   0.000006175   8.022894858  -0.000000000
+  -0.000000000  -0.000000000   5.431766063
+ATOMIC_SPECIES
+Al  1.0   Al.GGA-PBE-Epaw.UPF
+O   1.0   O.GGA-PBE-Epaw.UPF
+H   4.0   H.GGA-PBE-Epaw.UPF
+ATOMIC_POSITIONS (crystal)
+Al      -0.000217979   0.232373708   0.000000000
+Al       0.499781399   0.767598531   0.500000000
+O        0.353223873   0.494313152  -0.000000000
+O        0.853222485   0.505658317   0.500000000
+O        0.653766865   0.006135482   0.000000000
+O        0.153767617   0.993839274   0.500000000
+H        0.486493789   0.287778479  -0.000000000
+H        0.986493437   0.712188416   0.500000000
+K_POINTS (Automatic)
+ 4   4   4   0   0   0
