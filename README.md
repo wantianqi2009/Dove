@@ -36,3 +36,6 @@ Phonon 流程：
 6.提交jobLDA.sh(注意并行任务个数和核数的关系）
 7.运行phonon.py
 8.提交jobscf.sh
+
+
+tar --exclude='*/*/tmp' -czvf IpiRzhijie.tar.gz IpIRzhijie
